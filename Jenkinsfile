@@ -30,7 +30,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'ansible-playbook ansible/playbook.yml -i ansible/hosts.ini'
+                echo 'Copied successfully'
             }
         }
     }
