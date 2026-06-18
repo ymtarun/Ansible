@@ -1,0 +1,9 @@
+---
+- hosts: tomcat
+  become: yes
+  tasks:
+    - name: Deploy WAR to Tomcat webapps
+      copy:
+        src: ../target/WebAppAnsible.war
+        dest: /opt/tomcat/webapps/WebAppAnsible.war
+        
